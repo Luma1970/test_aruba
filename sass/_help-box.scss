@@ -1,0 +1,36 @@
+/* BOX PROBLEMI */
+
+.help-box {
+  width: 35.2rem;
+  height: 43.6rem;
+  border: 1px solid $color-light-grey;
+
+  background-image: url("../img/Raggruppa_small.png");
+  background-repeat: no-repeat;
+  background-position: 50% 9.2%;
+  background-size: 23.8rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+     margin-top: 3.5rem;
+  }
+
+  &__txt {
+     padding: 4.8rem 3.2rem 0 3.2rem;
+     text-align: left;
+     height: 4.8rem;
+  }
+
+  .heading--3 {
+     padding: 3.2rem 3.2rem 0 3.2rem;
+     height: 8.5rem;
+  }
+
+  .button-fill {
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 8.8rem;
+  }
+}

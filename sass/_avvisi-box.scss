@@ -1,0 +1,27 @@
+/* BOX AVVISI */
+
+.avvisi-box {
+   display: grid;
+   grid-template-columns: 9.6rem 44.5rem;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   box-shadow: 0 0 6px #00000030;
+
+
+   height: 25.3rem;
+   background-color: #fff;
+
+  &--1 {
+  grid-column: main-start / col-end 1;
+  }
+
+  &__img {
+     margin: 3.2rem 0 0 2.4rem;
+  }
+
+  &__content {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+  }
+}

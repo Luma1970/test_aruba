@@ -1,0 +1,21 @@
+/* HERO */
+
+.hero {
+   margin-top: 5px;
+   grid-column: 1 / -1;
+   background-image: url('../img/hero.png');
+   background-repeat: no-repeat;
+   align-content: center;
+
+   display: grid;
+   grid-template-columns: [sideL-start] minmax(6rem, 1fr) [sideL-end main-start] minmax(min-content, 112rem) [main-end sideR-start] minmax(6rem, 1fr) [sideR-end];
+   grid-template-rows: repeat(2, min-content);
+
+   .heading--1 {
+      grid-column: main-start;
+   }
+
+   .subheading {
+      grid-column: main-start;
+   }
+}

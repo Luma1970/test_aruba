@@ -1,0 +1,20 @@
+/* BOX ASSISTENZA */
+
+.assistenza {
+   height: 26.4rem;
+   border-top: 2px solid #ddd;
+   border-bottom: 2px solid #ddd;
+
+   &__content {
+      grid-column: main-start / main-end;
+      margin-top: 5rem;
+
+      .heading--2 {
+         color: #74889E;
+      }
+
+      .btns {
+         margin-top: 4rem;
+      }
+   }
+}

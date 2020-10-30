@@ -1,0 +1,56 @@
+// FONT
+$font-title: 'Lato', sans-serif;
+$font-text: Arial, sans-serif;
+
+// COLORI
+$color-primary: #222;
+$color-logo: #E35205;
+$color-blu: #1474BD;
+
+$color-dark-grey: #666;
+$color-medium-grey: #74889E;
+$color-light-grey: #ddd;
+
+$color-white: #fff;
+
+/* IMPOSTAZIONI DI BASE */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: $font-text;
+  color: $color-primary;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 147.2rem;
+  margin: 1.3rem auto;
+  display: grid;
+  grid-template-columns: [sideL-start] minmax(6rem, 1fr) [sideL-end main-start] minmax(54.1rem, 112rem) [main-end sideR-start] minmax(6rem, 1fr) [sideR-end];
+  grid-template-rows: 5.7rem 4rem 30.8rem auto 43.92rem ;
+  grid-auto-rows: min-content;
+}
+
+a:link {
+  text-decoration: none;
+  color: $color-primary;
+}
+
+a:active {
+  border-bottom: 4px solid $color-logo;
+  overflow: hidden;
+}

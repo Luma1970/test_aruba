@@ -1,0 +1,61 @@
+/* HEADER */
+
+.header {
+   grid-column: main-start / main-end;
+
+   display: grid;
+   grid-template-columns: [logo-start] minmax(min-content, 1fr) [logo-end icon-start] 1.467rem [icon-end langue-start] repeat(3, min-content) [langue-end btn-start] min-content [btn-end];
+   grid-column-gap: 1rem;
+   align-content: center;
+
+   .logo {
+      align-self: center;
+   }
+
+   .lingua {
+      
+
+      &__icon {
+         grid-column: icon-start / icon-end;
+         align-self: center;
+
+         width: 1.467rem;
+         height: 1.467rem;
+         fill: $color-dark-grey;
+      }
+
+      &__icon-small {
+         fill: $color-dark-grey;
+         align-self: center;
+      }
+
+      &__txt {
+         grid-column: langue-start / span 1;
+         align-self: center;
+
+         font-family: $font-title;
+         font-weight: bold;
+         font-size: 1rem;
+         color: $color-dark-grey;
+         text-transform: uppercase;
+      }
+   }
+
+   .v1 {
+      align-self: center;
+      border: 1px solid $color-light-grey;
+      height: 1.3rem;
+   }
+
+   .button-line {
+      grid-column: btn-start / btn-end;
+   }
+
+   .divis {
+      align-self: start;
+      color: transparent;
+      border-top: 1px solid $color-light-grey;
+      grid-column: 1 / -1;
+   }
+   
+}

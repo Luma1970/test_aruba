@@ -1,0 +1,11 @@
+/* FOOTER */
+
+.footer {
+   grid-column: sideL-start / sideR-end;
+
+   &__content {
+      width: 147.2rem;
+      max-width: 100%;
+      margin-top: -5px;
+   }
+} 

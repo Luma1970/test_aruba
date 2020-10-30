@@ -1,0 +1,39 @@
+/* STRUTTURA SEZIONI */
+
+.main-content {
+   grid-column: main-start / main-end;
+
+   display: grid;
+   grid-template-columns: minmax(35.2rem, 112rem);
+   grid-template-rows: 13.2rem repeat(2, auto);
+   grid-row-gap: 3.3rem;
+   grid-auto-rows: auto;
+   align-items: center;
+}
+
+.help {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.avvisi {
+   grid-column: sideL-start / sideR-end;
+   margin-top: 4.8rem;
+
+   display: grid;
+   grid-template-columns: [sideL-start] minmax(6rem, 1fr) [sideL-end main-start] repeat(2, [col-start] 54.1rem [col-end]) [main-end sideR-start] minmax(6rem, 1fr) [sideR-end];
+   grid-auto-rows: auto;
+   grid-column-gap: 3.7rem;
+   align-items: center; 
+
+   background-image: url('../img/Raggruppa.png');
+}
+
+.assistenza {
+   grid-column: sideL-start / sideR-end;
+   margin-top: 4.8rem;
+
+   display: grid;
+   grid-template-columns: [sideL-start] minmax(6rem, 1fr) [sideL-end main-start] minmax(54.1rem, 112rem) [main-end sideR-start] minmax(6rem, 1fr) [sideR-end];
+}

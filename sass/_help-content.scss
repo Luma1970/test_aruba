@@ -1,0 +1,23 @@
+/* BOX CONTENUTI ARUBA */
+
+.help-content {
+  background-image: url("../img/Raggruppa_small.png");
+  background-repeat: no-repeat;
+  background-position: 2.4rem 50%;
+  border: 1px solid $color-light-grey;
+  padding: 3.3rem 0 3.3rem 2.4rem;
+  margin-right: 1.3rem;
+
+  display: grid;
+  grid-template-columns: [img-start] minmax(min-content, 25.8rem) [img-end txt-start] minmax(min-content, 43.8rem) [txt-end btn-start] minmax(min-content, 37.1rem) [btn-end];
+  align-items: center;
+  justify-items: center;
+
+  &__txt {
+     padding-left: 1.6rem;
+  }
+
+  &__info {
+     padding-top: 1.6rem;
+  }
+}
