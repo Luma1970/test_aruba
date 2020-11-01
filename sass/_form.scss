@@ -1,0 +1,36 @@
+.form {
+
+   label {
+      margin: 3.3rem 0 0.5rem 0;
+   }
+
+   input {
+      width: 54.4rem;
+      height: 4.1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+   }
+
+   select {
+      width: 55.4rem;
+      height: 4.1rem;
+      background-color: transparent;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      cursor: inherit;
+   }
+
+   textarea {
+      width: 67.2rem;
+      height: 21.3rem;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+   }
+}

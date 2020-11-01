@@ -41,8 +41,15 @@ body {
   margin: 1.3rem auto;
   display: grid;
   grid-template-columns: [sideL-start] minmax(6rem, 1fr) [sideL-end main-start] minmax(54.1rem, 112rem) [main-end sideR-start] minmax(6rem, 1fr) [sideR-end];
-  grid-template-rows: 5.7rem 4rem 30.8rem auto 43.92rem ;
   grid-auto-rows: min-content;
+
+  &__form {
+    margin-top: 15rem;
+  }
+}
+
+.ass {
+  grid-template-rows: 5.7rem 4rem 30.8rem auto 43.92rem ;
 }
 
 a:link {

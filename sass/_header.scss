@@ -49,13 +49,12 @@
 
    .button-line {
       grid-column: btn-start / btn-end;
-   }
+   }   
+}
 
-   .divis {
-      align-self: start;
-      color: transparent;
-      border-top: 1px solid $color-light-grey;
-      grid-column: 1 / -1;
-   }
-   
+.divis {
+   align-self: start;
+   color: transparent;
+   border-top: 1px solid $color-light-grey;
+   grid-column: 1 / -1;
 }
