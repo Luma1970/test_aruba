@@ -43,21 +43,11 @@ body {
   grid-template-columns: [sideL-start] minmax(6rem, 1fr) [sideL-end main-start] minmax(54.1rem, 112rem) [main-end sideR-start] minmax(6rem, 1fr) [sideR-end];
   grid-auto-rows: min-content;
 
-  &__form {
+  &__gap {
     margin-top: 15rem;
   }
 }
 
 .ass {
   grid-template-rows: 5.7rem 4rem 30.8rem auto 43.92rem ;
-}
-
-a:link {
-  text-decoration: none;
-  color: $color-primary;
-}
-
-a:active {
-  border-bottom: 4px solid $color-logo;
-  overflow: hidden;
 }

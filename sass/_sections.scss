@@ -44,7 +44,7 @@
 
 .main-form {
    grid-column: main-start / main-end;
-   margin-top: 3.3rem;
+   margin-top: 3.2rem;
 
    &__txt {
       border-bottom: 1px solid $color-light-grey;
@@ -72,4 +72,18 @@
          }
       }
    }   
+}
+
+.soluzioni {
+   grid-column: main-start / main-end;
+   margin-top: 3.2rem;
+   margin-bottom: 6.4rem;
+
+   display: grid;
+   grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 77.6rem);
+
+   &__cons {
+      display: grid;
+      height: 43.9rem; 
+   }
 }

@@ -1,0 +1,118 @@
+/* BOX DIFFICLTÀ ACQUISTO */
+
+.box-sol {
+  width: 28.8rem;
+  height: 46.5rem;
+  border-radius: 8px;
+  border: 1px solid $color-light-grey;
+  padding: 1.6rem;
+
+  &__img {
+    max-width: 4.1rem;
+    width: 100%;
+    align-self: start;
+  }
+
+  &__header {
+    display: flex;
+  }
+
+  &__div {
+    margin-top: 1.6rem;
+    color: transparent;
+    border-top: 1px solid $color-light-grey;
+  }
+
+  &__check-group {
+    display: grid;
+    grid-template-columns: 2.4rem 21.5rem;
+    grid-template-rows: repeat(4, 5.9rem);
+    grid-row-gap: 2.4rem;
+    margin-top: 1.6rem;
+  }
+
+  &__check-label:not(#dotted) {
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+       content: "";
+       display: block;
+       height: 6.8rem;
+       border: 1px solid $color-light-grey;
+       position: absolute;
+       top: 2rem;
+       left: 5.5px;
+    }
+  }
+
+  &__check-txt {
+    font-size: 1.4rem;
+  }
+
+  &__check-input,
+  &__check-btn {
+    align-self: start;
+    margin: 4px 9px 0 0;
+  }
+
+  &__check-input {
+    display: none;
+  }
+
+  &__check-btn {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid #09800f;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 5.91px;
+      width: 7.57px;
+      border: solid #09800f;
+      border-width: 0 1px 1px 0;
+      position: absolute;
+      top: 2px;
+      left: 3px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  }
+
+  &__check-input:checked ~ &__check-btn::after {
+    // &__check-label  {
+    opacity: 1;
+  }
+
+  a:link {
+    color: $color-blu;
+  }
+
+  a:visited {
+    color: $color-blu;
+  }
+}
+
+#dotted {
+   cursor: pointer;
+   position: relative;
+
+   &::after {
+      content: "";
+      display: block;
+      height: 5.2rem;
+      border: 1px dashed $color-light-grey;
+      position: absolute;
+      top: 2rem;
+      left: 5.5px;
+   }
+ }

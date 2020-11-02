@@ -21,5 +21,13 @@
       border-bottom: 4px solid $color-logo;
    }
 
+   a:link {
+     text-decoration: none;
+     color: $color-primary;
+   }
    
+   a:active {
+     border-bottom: 4px solid $color-logo;
+     overflow: hidden;
+   }   
 } 

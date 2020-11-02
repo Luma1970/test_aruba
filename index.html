@@ -14,6 +14,7 @@
 <body>
 
    <!-- PAGINA ASSISTENZA -->
+      <!-- Non avendo il logo ho lasciato solola scritta "aruba.it" -->
    <div class="container ass">
       <header class="header">
          <div class="logo">aruba.it</div>
@@ -107,13 +108,15 @@
             </div>
          </div>
       </section>
+
+      <!-- Ho inserito il footer come immagine come nel mock-up -->
       <footer class="footer">
          <img src="img/footer.png" alt="footer" class="footer__content">
       </footer>
    </div>
 
    <!-- RICHIESTA INFORMAZIONI -->
-   <div class="container container__form">
+   <div class="container container__gap">
       <header class="header">
          <div class="logo">aruba.it</div>
          <svg class="lingua__icon">
@@ -201,7 +204,106 @@
       <footer class="footer">
          <img src="img/footer.png" alt="footer" class="footer__content">
       </footer>
+   </div>
 
+   <!-- CONTATTACI -->
+   <div class="container container__gap">
+      <header class="header">
+         <div class="logo">aruba.it</div>
+         <svg class="lingua__icon">
+            <use xlink:href="img/sprite.svg#icon-global"></use>
+         </svg>
+         <p class="lingua__txt">Italiano</p>
+         <img src="img/icons8-avanti.svg" alt="freccina verso il basso" class="lingua__icon-small">
+         <div class="v1"></div>
+         <button class="button-line button-line--small button-line--blue">accedi</button>
+         <hr class="divis">
+      </header>
+
+      <nav class="navigation">
+         <a href="#" class="menu active">Assistenza generale</a>
+         <a href="#" class="menu">Assistenza personalizzata</a>
+      </nav>
+
+      <hr class="divis divis--1">
+
+      <section class="soluzioni">
+         <div class="box-sol">
+            <div class="box-sol__header">
+               <img src="img/SitowebEcommerce-eCommerce-generico.svg" alt="carrello di acquisto" class="box-sol__img">
+               <p class="subheading-small">Hai riscontrato difficoltà durante l’acquisto di un servizio?</p>
+            </div>
+            <hr class="box-sol__div">
+            <div class="box-sol__check-group">
+               <label class="box-sol__check-label">
+                  <input type="checkbox" class="box-sol__check-input">
+                  <span class="box-sol__check-btn"></span>
+               </label>
+               <p class="box-sol__check-txt">Hai riscontrato difficoltà durante l’ordine di un servizio?
+                  <br><a href="#">Modifica</a>
+               </p>
+
+               <label class="box-sol__check-label">
+                  <input type="checkbox" class="box-sol__check-input">
+                  <span class="box-sol__check-btn"></span>
+               </label>
+               <p class="box-sol__check-txt">Hai già effettuato l'ordine?
+                  <br><a href="#">Modifica</a></p>
+
+               <label class="box-sol__check-label">
+                  <input type="checkbox" class="box-sol__check-input">
+                  <span class="box-sol__check-btn"></span>
+               </label>
+               <p class="box-sol__check-txt">Problemi in fase di ordine?
+                  <br><a href="#">Modifica</a></p>
+
+               <label class="box-sol__check-label" id="dotted">
+                  <input type="checkbox" class="box-sol__check-input">
+                  <span class="box-sol__check-btn"></span>
+               </label>
+               <p class="box-sol__check-txt">Soluzioni consigliate per il tuo problema</p>
+            </div>
+         </div>
+
+         <div class="soluzioni__cons">
+            <h2 class="heading heading--2">Soluzioni consigliate</h2>
+            <p class="soluzioni__txt">Seleziona una delle seguenti opzioni:</p>
+            <div class="soluzioni__box">
+               <div class="soluzioni__content">
+                  <h4 class="heading heading--4">Contattaci</h4>
+                  <p class="soluzioni__box--txt">Contatta l’assistenza telefonica o scegli uno dei canali alternativi.
+                  </p>
+               </div>
+               <img src="img/arrow-forward-circle-outline.svg" alt="freccia" class="soluzioni__box--img">
+            </div>
+            <div class="soluzioni__box">
+               <div class="soluzioni__content">
+                  <h4 class="heading heading--4">Scrivici</h4>
+                  <p class="soluzioni__box--txt">Richiedi supporto compilando l’apposito modulo.</p>
+               </div>
+               <img src="img/arrow-forward-circle-outline.svg" alt="freccia" class="soluzioni__box--img">
+            </div>
+            <button class="button button-line button-line--large button-line--blue">esci da percorso guidato</button>
+         </div>
+      </section>
+
+      <section class="assistenza">
+         <div class="assistenza__content">
+            <div class="assistenza__txt">
+               <h2 class=" heading heading--2">Assistenza Aruba</h2>
+               <p class="assistenza__info">Hai bisogno di supporto? Siamo felici di poterti aiutare, con la
+                  professionalità
+                  e l'esperienza del nostro personale specializzato.</p>
+            </div>
+            <div class="btns">
+               <button class="button-line button-line--all-grey">vai all'assistenza</button>
+               <button class="button-line button-line--grey">accedi</button>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <img src="img/footer.png" alt="footer" class="footer__content">
+      </footer>
    </div>
 </body>
 
